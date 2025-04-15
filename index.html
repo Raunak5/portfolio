@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raunak - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;
+      height: 80px;
+      background-color: rgb(18, 18, 62);
+    }
+
+    nav ul {
+      display: flex;
+      gap: 23px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: lavender;
+      font-size: 1.01rem;
+    }
+
+    .left {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    main hr {
+      border: none;
+      background: #9c97f1;
+      height: 1.2px;
+      margin: 40px 84px;
+    }
+
+    .firstSection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 110px 0;
+    }
+
+    .firstSection > div {
+      width: 30%;
+    }
+
+    .leftSection {
+      font-size: 2rem;
+      margin: 30px 0;
+    }
+
+    .rightSection img {
+      width: 80%;
+      margin: 50px 0;
+    }
+
+    .purple {
+      color: rgb(169, 110, 225);
+    }
+
+    .text-grey {
+      color: gray;
+    }
+
+    #element {
+      color: aliceblue;
+    }
+
+    .secondSection {
+      max-width: 80vw;
+      margin: auto;
+    }
+
+    .secondSection h1 {
+      font-size: 1.9rem;
+      margin-bottom: 20px;
+    }
+
+    .secondSection .box {
+      background: white;
+      width: 80vw;
+      height: 2px;
+      margin: 56px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: relative;
+    }
+
+    .vertical {
+      height: 93px;
+      width: 1px;
+      background-color: white;
+      margin: 0 100px;
+      position: relative;
+    }
+
+    .vertical-text {
+      position: absolute;
+      top: 100px;
+      width: 150px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .vertical-image {
+      margin-top: 160px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .vertical-image img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-top: 120px; /* ← add this line or adjust it */
+}
+
+
+    .vertical-image img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Contact Section */
+    .contactSection {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: 80px auto 0 auto;
+      text-align: center;
+    }
+
+    .contactSection h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .contact-info {
+      margin-top: 20px;
+      font-size: 1rem;
+    }
+
+    .contact-info a {
+      color: #9c97f1;
+      text-decoration: none;
+      display: block;
+      margin: 8px 0;
+      transition: color 0.3s ease;
+    }
+
+    .contact-info a:hover {
+      color: lavender;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Raunak's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Services</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        Hi, My name is <span class="purple">Raunak</span>
+        <div>I am a B.Tech. Student in Electrical and Communication Engineering.</div>
+        <div>
+          I am passionate about learning electronic devices and understanding how they function.
+          My expertise is in <span id="element"></span>
+        </div>
+      </div>
+      <div class="rightSection">
+        <img src="el.jpg" alt="Electronics Image" />
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="secondSection">
+      <span class="text-grey">What I have done so far</span>
+      <h1>Work Experience</h1>
+      <div class="box">
+        <div class="vertical">
+          <div class="vertical-text">
+            Knowledge about MATLAB, NI Multisim, Assembly language, and Embedded C
+          </div>
+        </div>
+        <div class="vertical">
+          <div class="vertical-text">
+            Proficient in C, C++, and currently learning DSA in C++
+          </div>
+        </div>
+        <div class="vertical">
+          <div class="vertical-text">
+            Projects: Automatic bulb (sensor-based), Touch sensor using SR-latch, ERP-based security camera
+          </div>
+        </div>
+        <div class="vertical">
+          <div class="vertical-text">
+            Certifications: Arduino, MATLAB (Signal Processing)
+          </div>
+        </div>
+        <div class="vertical-image">
+          <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+            <img src="self.jpg" alt="Raunak's Profile" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="contactSection" id="contact">
+      <h1>Contact Me</h1>
+      <div class="contact-info">
+        <a href="rajraunak566@gmail.com">✉️ rajraunak566@gmail.com</a>
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank">🔗 LinkedIn Profile</a>
+        <a href="https://github.com/yourusername" target="_blank">💻 GitHub Profile</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['ESP32', 'STM32', 'Raspberry Pi'],
+      typeSpeed: 50,
+      loop: true
+    });
+  </script>
+</body>
+</html>
